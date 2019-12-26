@@ -26,6 +26,12 @@ function Copyright() {
   );
 }
 
+function Login_onclick(){
+   fetch('http://localhost:9000/api/login',{
+     body: 'ni hao wo shi body' })
+  console.log("login is callled")
+}
+
 const useStyles = makeStyles(theme => ({
   paper: {
     marginTop: theme.spacing(8),

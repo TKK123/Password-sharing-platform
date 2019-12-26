@@ -4,21 +4,21 @@ import Login from './components/login'
 import './App.css';
 class App extends Component {
 
-// constructor(props) {
-//     super(props);
-//     this.state = { apiResponse: "" };
-// }
+constructor(props) {
+    super(props);
+    this.state = { apiResponse: "" };
+}
 
-// callAPI() {
-//     fetch("http://localhost:9000/api")
-//         .then(res => res.text())
-//         .then(res => this.setState({ apiResponse: res }))
-//         .catch(err => err);
-// }
+callAPI() {
+    fetch("http://localhost:9000/api")
+        .then(res => res.text())
+        .then(res => this.setState({ apiResponse: res }))
+        .catch(err => err);
+}
 
-// componentWillMount() {
-//     this.callAPI();
-// }
+componentWillMount() {
+    this.callAPI();
+}
   
   
   render(){
